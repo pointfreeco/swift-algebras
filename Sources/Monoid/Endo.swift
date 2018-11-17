@@ -1,4 +1,3 @@
-
 extension Semigroup {
   public static func endo<B>() -> Semigroup<(B) -> B> {
     return Semigroup<(B) -> B> { lhs, rhs in

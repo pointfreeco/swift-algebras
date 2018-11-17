@@ -2,6 +2,7 @@
 public struct Monoid<A> {
   public let empty: A
   public let semigroup: Semigroup<A>
+  
   public func concat<S: Sequence>(_ xs: S) -> A where S.Element == A {
     return self.foldMap({ $0 })(xs)
   }
