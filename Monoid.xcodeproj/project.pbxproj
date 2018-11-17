@@ -31,6 +31,7 @@
 		CA88A3E1219FA0F200B17D15 /* Pointwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E0219FA0F200B17D15 /* Pointwise.swift */; };
 		CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E2219FA18D00B17D15 /* Monoid.swift */; };
 		CA88A3E5219FA20000B17D15 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E4219FA20000B17D15 /* Average.swift */; };
+		CA88A3E7219FA45700B17D15 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E6219FA45700B17D15 /* Dictionary.swift */; };
 		OBJ_22 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Semigroup.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
@@ -66,6 +67,7 @@
 		CA88A3E0219FA0F200B17D15 /* Pointwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointwise.swift; sourceTree = "<group>"; };
 		CA88A3E2219FA18D00B17D15 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
 		CA88A3E4219FA20000B17D15 /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
+		CA88A3E6219FA45700B17D15 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		"Monoid::Monoid::Product" /* Monoid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Monoid::MonoidTests::Product" /* MonoidTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -142,17 +144,18 @@
 		OBJ_8 /* Monoid */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Semigroup.swift */,
-				CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */,
-				CA88A3D4219FA09600B17D15 /* Numeric.swift */,
-				CA88A3D6219FA0A400B17D15 /* Bool.swift */,
-				CA88A3D8219FA0B000B17D15 /* Endo.swift */,
-				CA88A3DA219FA0C200B17D15 /* Comparable.swift */,
-				CA88A3DC219FA0CF00B17D15 /* Optional.swift */,
-				CA88A3DE219FA0DD00B17D15 /* Tuple.swift */,
-				CA88A3E0219FA0F200B17D15 /* Pointwise.swift */,
-				CA88A3E2219FA18D00B17D15 /* Monoid.swift */,
 				CA88A3E4219FA20000B17D15 /* Average.swift */,
+				CA88A3D6219FA0A400B17D15 /* Bool.swift */,
+				CA88A3DA219FA0C200B17D15 /* Comparable.swift */,
+				CA88A3E6219FA45700B17D15 /* Dictionary.swift */,
+				CA88A3D8219FA0B000B17D15 /* Endo.swift */,
+				CA88A3E2219FA18D00B17D15 /* Monoid.swift */,
+				CA88A3D4219FA09600B17D15 /* Numeric.swift */,
+				CA88A3DC219FA0CF00B17D15 /* Optional.swift */,
+				CA88A3E0219FA0F200B17D15 /* Pointwise.swift */,
+				CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */,
+				OBJ_9 /* Semigroup.swift */,
+				CA88A3DE219FA0DD00B17D15 /* Tuple.swift */,
 			);
 			name = Monoid;
 			path = Sources/Monoid;
@@ -246,6 +249,7 @@
 				CA88A3D5219FA09600B17D15 /* Numeric.swift in Sources */,
 				CA88A3DD219FA0CF00B17D15 /* Optional.swift in Sources */,
 				CA88A3DB219FA0C200B17D15 /* Comparable.swift in Sources */,
+				CA88A3E7219FA45700B17D15 /* Dictionary.swift in Sources */,
 				CA88A3DF219FA0DD00B17D15 /* Tuple.swift in Sources */,
 				OBJ_22 /* Semigroup.swift in Sources */,
 				CA88A3D9219FA0B000B17D15 /* Endo.swift in Sources */,
