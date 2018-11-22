@@ -32,6 +32,7 @@
 		CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E2219FA18D00B17D15 /* Monoid.swift */; };
 		CA88A3E5219FA20000B17D15 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E4219FA20000B17D15 /* Average.swift */; };
 		CA88A3E7219FA45700B17D15 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E6219FA45700B17D15 /* Dictionary.swift */; };
+		CACE913C21A078AB00E3F50F /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACE913B21A078AB00E3F50F /* Folds.swift */; };
 		OBJ_22 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Semigroup.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
@@ -68,6 +69,7 @@
 		CA88A3E2219FA18D00B17D15 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
 		CA88A3E4219FA20000B17D15 /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
 		CA88A3E6219FA45700B17D15 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		CACE913B21A078AB00E3F50F /* Folds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folds.swift; sourceTree = "<group>"; };
 		"Monoid::Monoid::Product" /* Monoid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Monoid::MonoidTests::Product" /* MonoidTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -130,7 +132,6 @@
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -149,6 +150,7 @@
 				CA88A3DA219FA0C200B17D15 /* Comparable.swift */,
 				CA88A3E6219FA45700B17D15 /* Dictionary.swift */,
 				CA88A3D8219FA0B000B17D15 /* Endo.swift */,
+				CACE913B21A078AB00E3F50F /* Folds.swift */,
 				CA88A3E2219FA18D00B17D15 /* Monoid.swift */,
 				CA88A3D4219FA09600B17D15 /* Numeric.swift */,
 				CA88A3DC219FA0CF00B17D15 /* Optional.swift */,
@@ -226,7 +228,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,6 +255,7 @@
 				CA88A3DF219FA0DD00B17D15 /* Tuple.swift in Sources */,
 				OBJ_22 /* Semigroup.swift in Sources */,
 				CA88A3D9219FA0B000B17D15 /* Endo.swift in Sources */,
+				CACE913C21A078AB00E3F50F /* Folds.swift in Sources */,
 				CA88A3E1219FA0F200B17D15 /* Pointwise.swift in Sources */,
 				CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */,
 				CA88A3E5219FA20000B17D15 /* Average.swift in Sources */,

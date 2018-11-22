@@ -3,8 +3,7 @@ public struct Semigroup<A> {
   public let combine: (A, A) -> A
   public let mcombine: (inout A, A) -> Void
 
-  // TODO: should we make this a named param for when we don't want to use trailng syntax and be super clear?
-  public init(_ combine: @escaping (A, A) -> A) {
+  public init(combine: @escaping (A, A) -> A) {
     self.combine = combine
     self.mcombine = { accum, a in
       let result = combine(accum, a)
@@ -12,7 +11,7 @@ public struct Semigroup<A> {
     }
   }
 
-  public init(_ mcombine: @escaping (inout A, A) -> Void) {
+  public init(mcombine: @escaping (inout A, A) -> Void) {
     self.mcombine = mcombine
     self.combine = { accum, a in
       var copy = accum
@@ -21,9 +20,10 @@ public struct Semigroup<A> {
     }
   }
 
-  // todo: move this somewhere else and maybe rename
-  public func concat<S: Sequence>(_ initialValue: S.Element, _ xs: S) -> A where S.Element == A {
-    return xs.reduce(into: initialValue, self.mcombine)
+  func imap<B>(_ f: @escaping (A) -> B, _ g: @escaping (B) -> A) -> Semigroup<B> {
+    return Semigroup<B>(combine: { lhs, rhs in
+      f(self.combine(g(lhs), g(rhs)))
+    })
   }
 }
 

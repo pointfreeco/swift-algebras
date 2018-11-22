@@ -1,10 +1,9 @@
-
 extension Semigroup {
-  public static func last<B>() -> Semigroup<B?> {
-    return Semigroup<B?> { $1 ?? $0 }
+  public static var last: Semigroup<A?> {
+    return .init { $1 ?? $0 }
   }
-  public static func first<B>() -> Semigroup<B?> {
-    return Semigroup<B?> { $0 ?? $1 }
+  public static var first: Semigroup<A?> {
+    return .init { $0 ?? $1 }
   }
 }
 
@@ -19,10 +18,10 @@ extension Monoid {
 }
 
 extension Monoid {
-  public static func last<B>() -> Monoid<B?> {
-    return Monoid<B?>(empty: nil, semigroup: .last())
+  public static var last: Monoid<A?> {
+    return .init(empty: nil, semigroup: Semigroup.last)
   }
-  public static func first<B>() -> Monoid<B?> {
-    return self.last().dual
+  public static var first: Monoid<A?> {
+    return self.last.dual
   }
 }

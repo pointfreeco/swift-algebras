@@ -1,6 +1,6 @@
 extension Semigroup {
-  public static func endo<B>() -> Semigroup<(B) -> B> {
-    return Semigroup<(B) -> B> { lhs, rhs in
+  public static var endo: Semigroup<(A) -> A> {
+    return .init { lhs, rhs in
       return { a in rhs(lhs(a)) }
     }
   }
@@ -8,9 +8,6 @@ extension Semigroup {
 
 extension Monoid {
   public static var endo: Monoid<(A) -> A> {
-    return Monoid<(A) -> A>(
-      empty: { $0 },
-      semigroup: .endo()
-    )
+    return .init(empty: { $0 }, semigroup: Semigroup.endo)
   }
 }

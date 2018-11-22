@@ -1,13 +1,19 @@
-extension Semigroup {
-  public static func tuple2<B, C>(_ b: Semigroup<B>, _ c: Semigroup<C>) -> Semigroup<(B, C)> {
-    return Semigroup<(B, C)> { lhs, rhs in
-      (b.combine(lhs.0, rhs.0), c.combine(lhs.1, rhs.1))
-    }
+public func tuple2<A, B>(_ a: Semigroup<A>, _ b: Semigroup<B>) -> Semigroup<(A, B)> {
+  return Semigroup { lhs, rhs in
+    (a.combine(lhs.0, rhs.0), b.combine(lhs.1, rhs.1))
   }
 }
 
-extension Monoid {
-  public static func tuple2<B, C>(_ b: Monoid<B>, _ c: Monoid<C>) -> Monoid<(B, C)> {
-    return Monoid<(B, C)>(empty: (b.empty, c.empty), semigroup: .tuple2(b.semigroup, c.semigroup))
+public func tuple2<A, B>(_ a: Monoid<A>, _ b: Monoid<B>) -> Monoid<(A, B)> {
+  return Monoid(empty: (a.empty, b.empty), semigroup: tuple2(a.semigroup, b.semigroup))
+}
+
+public func tuple3<A, B, C>(_ a: Semigroup<A>, _ b: Semigroup<B>, _ c: Semigroup<C>) -> Semigroup<(A, B, C)> {
+  return Semigroup { lhs, rhs in
+    (a.combine(lhs.0, rhs.0), b.combine(lhs.1, rhs.1), c.combine(lhs.2, rhs.2))
   }
+}
+
+public func tuple3<A, B, C>(_ a: Monoid<A>, _ b: Monoid<B>, _ c: Monoid<C>) -> Monoid<(A, B, C)> {
+  return Monoid(empty: (a.empty, b.empty, c.empty), semigroup: tuple3(a.semigroup, b.semigroup, c.semigroup))
 }

@@ -4,19 +4,9 @@ import PackageDescription
 
 let package = Package(
   name: "Monoid",
-  products: [
-    .library(
-      name: "Monoid",
-      targets: ["Monoid"]),
-    ],
-  dependencies: [
-  ],
+  products: [.library(name: "Monoid", targets: ["Monoid"])],
+  dependencies: [],
   targets: [
-    .target(
-      name: "Monoid",
-      dependencies: []),
-    .testTarget(
-      name: "MonoidTests",
-      dependencies: ["Monoid"]),
-    ]
+    .target(name: "Monoid", dependencies: []),
+    .testTarget(name: "MonoidTests", dependencies: ["Monoid"])]
 )

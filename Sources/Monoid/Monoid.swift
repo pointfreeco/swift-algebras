@@ -1,17 +1,12 @@
+// TODO: swift has problems when types have the same name as their package. shuold we rename the package
+//       to swift-semigroup-monoid?
 // TODO: should the generic be M?
 public struct Monoid<A> {
   public let empty: A
   public let semigroup: Semigroup<A>
-  
-  public func concat<S: Sequence>(_ xs: S) -> A where S.Element == A {
-    return self.foldMap({ $0 })(xs)
-  }
 
-  // todo: move to file
-  public func foldMap<S: Sequence>(_ f: @escaping (S.Element) -> A) -> (S) -> A where S.Element == A {
-    return { xs in
-      xs.reduce(into: self.empty) { accum, x in self.semigroup.mcombine(&accum, f(x)) }
-    }
+  public func imap<B>(_ f: @escaping (A) -> B, _ g: @escaping (B) -> A) -> Monoid<B> {
+    return Monoid<B>(empty: f(self.empty), semigroup: self.semigroup.imap(f, g))
   }
 }
 
