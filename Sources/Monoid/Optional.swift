@@ -7,7 +7,7 @@ extension Semigroup {
   }
 }
 
-extension Monoid {
+extension Semigroup {
   public static func optional(_ witness: Semigroup<A>) -> Monoid<A?> {
     return Monoid<A?>(empty: nil, semigroup: Semigroup<A?>.init { lhs, rhs -> Void in
       // TODO: better way?

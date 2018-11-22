@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		CA393F3721A76B6400C35F44 /* Variance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA393F3621A76B6400C35F44 /* Variance.swift */; };
 		CA88A3D3219FA05A00B17D15 /* RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */; };
 		CA88A3D5219FA09600B17D15 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D4219FA09600B17D15 /* Numeric.swift */; };
 		CA88A3D7219FA0A400B17D15 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D6219FA0A400B17D15 /* Bool.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA393F3621A76B6400C35F44 /* Variance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variance.swift; sourceTree = "<group>"; };
 		CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeReplaceableCollection.swift; sourceTree = "<group>"; };
 		CA88A3D4219FA09600B17D15 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
 		CA88A3D6219FA0A400B17D15 /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */,
 				OBJ_9 /* Semigroup.swift */,
 				CA88A3DE219FA0DD00B17D15 /* Tuple.swift */,
+				CA393F3621A76B6400C35F44 /* Variance.swift */,
 			);
 			name = Monoid;
 			path = Sources/Monoid;
@@ -258,6 +261,7 @@
 				CACE913C21A078AB00E3F50F /* Folds.swift in Sources */,
 				CA88A3E1219FA0F200B17D15 /* Pointwise.swift in Sources */,
 				CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */,
+				CA393F3721A76B6400C35F44 /* Variance.swift in Sources */,
 				CA88A3E5219FA20000B17D15 /* Average.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

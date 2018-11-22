@@ -137,7 +137,21 @@ final class MonoidTests: XCTestCase {
   }
 
   func testAverage() {
-    XCTAssertEqual(Average(value: 3), Semigroup.average.combine(Average(value: 2.0), Average(value: 4.0)))
+    XCTAssertEqual(
+      Average(count: 2, sum: 6),
+      Semigroup.average.combine(Average(value: 2.0), Average(value: 4.0))
+    )
+  }
+
+  func testVariance() {
+    XCTAssertEqual(
+      Variance(count: 2, sum: 6),
+      Semigroup.variance.combine(Average(value: 2.0), Average(value: 4.0))
+    )
+  }
+
+  func testOptional() {
+    XCTAssertEqual(10, Semigroup.optional(.max).fold([1, 2, nil, 3, 4]))
   }
 
   static var allTests = [

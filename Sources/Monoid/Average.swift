@@ -2,12 +2,13 @@ public struct Average<A: BinaryFloatingPoint>: Equatable, Hashable {
   fileprivate let count: Int
   fileprivate let sum: A
 
-  public static func == (lhs: Average, rhs: Average) -> Bool {
-    return lhs.sum * A(rhs.count) == A(lhs.count) * rhs.sum
-  }
-
   public var average: A? {
     return self.count == 0 ? nil : .some(sum / A(count))
+  }
+
+  public init(count: Int, sum: A) {
+    self.count = count
+    self.sum = sum
   }
 }
 
