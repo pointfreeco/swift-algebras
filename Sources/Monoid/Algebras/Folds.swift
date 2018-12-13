@@ -23,3 +23,5 @@ extension Monoid {
     }
   }
 }
+
+// TODO: parallel foldMap?

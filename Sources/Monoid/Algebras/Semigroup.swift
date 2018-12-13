@@ -1,5 +1,6 @@
 // TODO: should the generic be S?
 public struct Semigroup<A> {
+  // Law: `combine(combine(a, b), c) == combine(a, combine(b, c))` for all a, b, c: A.
   public let combine: (A, A) -> A
   public let mcombine: (inout A, A) -> Void
 
@@ -25,9 +26,7 @@ public struct Semigroup<A> {
       f(self.combine(g(lhs), g(rhs)))
     })
   }
-}
-
-extension Semigroup {
+  
   public var dual: Semigroup {
     return Semigroup { self.combine($1, $0) }
   }

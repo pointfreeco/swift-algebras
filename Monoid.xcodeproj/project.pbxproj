@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"Monoid::MonoidPackageTests::ProductTarget" /* MonoidPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "MonoidPackageTests" */;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXAggregateTarget "MonoidPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_34 /* PBXTargetDependency */,
+				OBJ_60 /* PBXTargetDependency */,
 			);
 			name = MonoidPackageTests;
 			productName = MonoidPackageTests;
@@ -21,35 +21,38 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		CA393F3721A76B6400C35F44 /* Variance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA393F3621A76B6400C35F44 /* Variance.swift */; };
-		CA88A3D3219FA05A00B17D15 /* RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */; };
-		CA88A3D5219FA09600B17D15 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D4219FA09600B17D15 /* Numeric.swift */; };
-		CA88A3D7219FA0A400B17D15 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D6219FA0A400B17D15 /* Bool.swift */; };
-		CA88A3D9219FA0B000B17D15 /* Endo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3D8219FA0B000B17D15 /* Endo.swift */; };
-		CA88A3DB219FA0C200B17D15 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3DA219FA0C200B17D15 /* Comparable.swift */; };
-		CA88A3DD219FA0CF00B17D15 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3DC219FA0CF00B17D15 /* Optional.swift */; };
-		CA88A3DF219FA0DD00B17D15 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3DE219FA0DD00B17D15 /* Tuple.swift */; };
-		CA88A3E1219FA0F200B17D15 /* Pointwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E0219FA0F200B17D15 /* Pointwise.swift */; };
-		CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E2219FA18D00B17D15 /* Monoid.swift */; };
-		CA88A3E5219FA20000B17D15 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E4219FA20000B17D15 /* Average.swift */; };
-		CA88A3E7219FA45700B17D15 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88A3E6219FA45700B17D15 /* Dictionary.swift */; };
-		CACE913C21A078AB00E3F50F /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACE913B21A078AB00E3F50F /* Folds.swift */; };
-		OBJ_22 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Semigroup.swift */; };
-		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_40 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
-		OBJ_41 /* MonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MonoidTests.swift */; };
-		OBJ_43 /* Monoid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Monoid::Monoid::Product" /* Monoid.framework */; };
+		CABD067C21C2B452008082FB /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD067B21C2B452008082FB /* TODO.swift */; };
+		CABD081521C30A0F008082FB /* Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD081421C30A0F008082FB /* Void.swift */; };
+		CABD081721C30CD6008082FB /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD081621C30CD6008082FB /* Set.swift */; };
+		OBJ_35 /* Average.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Average.swift */; };
+		OBJ_36 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Bool.swift */; };
+		OBJ_37 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Comparable.swift */; };
+		OBJ_38 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Dictionary.swift */; };
+		OBJ_39 /* Endo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Endo.swift */; };
+		OBJ_40 /* Folds.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Folds.swift */; };
+		OBJ_41 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Monoid.swift */; };
+		OBJ_42 /* Numeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Numeric.swift */; };
+		OBJ_43 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Optional.swift */; };
+		OBJ_44 /* Pointwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Pointwise.swift */; };
+		OBJ_45 /* RangeReplaceableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* RangeReplaceableCollection.swift */; };
+		OBJ_46 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Semigroup.swift */; };
+		OBJ_47 /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Tuple.swift */; };
+		OBJ_48 /* Variance.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Variance.swift */; };
+		OBJ_55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_66 /* MonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MonoidTests.swift */; };
+		OBJ_67 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* XCTestManifests.swift */; };
+		OBJ_69 /* Monoid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Monoid::Monoid::Product" /* Monoid.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA88A3D0219FA01C00B17D15 /* PBXContainerItemProxy */ = {
+		CABD067621C2AE15008082FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Monoid::Monoid";
 			remoteInfo = Monoid;
 		};
-		CA88A3D1219FA01D00B17D15 /* PBXContainerItemProxy */ = {
+		CABD067721C2AE16008082FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -59,69 +62,103 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA393F3621A76B6400C35F44 /* Variance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variance.swift; sourceTree = "<group>"; };
-		CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeReplaceableCollection.swift; sourceTree = "<group>"; };
-		CA88A3D4219FA09600B17D15 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
-		CA88A3D6219FA0A400B17D15 /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
-		CA88A3D8219FA0B000B17D15 /* Endo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endo.swift; sourceTree = "<group>"; };
-		CA88A3DA219FA0C200B17D15 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
-		CA88A3DC219FA0CF00B17D15 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
-		CA88A3DE219FA0DD00B17D15 /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
-		CA88A3E0219FA0F200B17D15 /* Pointwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointwise.swift; sourceTree = "<group>"; };
-		CA88A3E2219FA18D00B17D15 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
-		CA88A3E4219FA20000B17D15 /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
-		CA88A3E6219FA45700B17D15 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
-		CACE913B21A078AB00E3F50F /* Folds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folds.swift; sourceTree = "<group>"; };
+		CABD067B21C2B452008082FB /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		CABD081421C30A0F008082FB /* Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Void.swift; sourceTree = "<group>"; };
+		CABD081621C30CD6008082FB /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		"Monoid::Monoid::Product" /* Monoid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Monoid::MonoidTests::Product" /* MonoidTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = MonoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* MonoidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoidTests.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Endo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endo.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Folds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folds.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Numeric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numeric.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Pointwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointwise.swift; sourceTree = "<group>"; };
+		OBJ_19 /* RangeReplaceableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeReplaceableCollection.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Semigroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Tuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		OBJ_22 /* Variance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variance.swift; sourceTree = "<group>"; };
+		OBJ_25 /* MonoidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoidTests.swift; sourceTree = "<group>"; };
+		OBJ_26 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Semigroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Average.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Average.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_23 /* Frameworks */ = {
+		OBJ_49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_42 /* Frameworks */ = {
+		OBJ_68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_43 /* Monoid.framework in Frameworks */,
+				OBJ_69 /* Monoid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
+		CABD067821C2B327008082FB /* Algebras */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* MonoidTests */,
+				OBJ_14 /* Folds.swift */,
+				OBJ_15 /* Monoid.swift */,
+				OBJ_20 /* Semigroup.swift */,
+				CABD067B21C2B452008082FB /* TODO.swift */,
+			);
+			path = Algebras;
+			sourceTree = "<group>";
+		};
+		CABD067921C2B339008082FB /* Instances */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Average.swift */,
+				OBJ_10 /* Bool.swift */,
+				OBJ_11 /* Comparable.swift */,
+				OBJ_12 /* Dictionary.swift */,
+				OBJ_13 /* Endo.swift */,
+				OBJ_16 /* Numeric.swift */,
+				OBJ_17 /* Optional.swift */,
+				OBJ_18 /* Pointwise.swift */,
+				OBJ_19 /* RangeReplaceableCollection.swift */,
+				CABD081621C30CD6008082FB /* Set.swift */,
+				OBJ_21 /* Tuple.swift */,
+				OBJ_22 /* Variance.swift */,
+				CABD081421C30A0F008082FB /* Void.swift */,
+			);
+			path = Instances;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* MonoidTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* MonoidTests */ = {
+		OBJ_24 /* MonoidTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* XCTestManifests.swift */,
-				OBJ_13 /* MonoidTests.swift */,
+				OBJ_25 /* MonoidTests.swift */,
+				OBJ_26 /* XCTestManifests.swift */,
 			);
 			name = MonoidTests;
 			path = Tests/MonoidTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* Products */ = {
+		OBJ_27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"Monoid::Monoid::Product" /* Monoid.framework */,
 				"Monoid::MonoidTests::Product" /* MonoidTests.xctest */,
+				"Monoid::Monoid::Product" /* Monoid.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -131,8 +168,8 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_14 /* Products */,
+				OBJ_23 /* Tests */,
+				OBJ_27 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,20 +184,8 @@
 		OBJ_8 /* Monoid */ = {
 			isa = PBXGroup;
 			children = (
-				CA88A3E4219FA20000B17D15 /* Average.swift */,
-				CA88A3D6219FA0A400B17D15 /* Bool.swift */,
-				CA88A3DA219FA0C200B17D15 /* Comparable.swift */,
-				CA88A3E6219FA45700B17D15 /* Dictionary.swift */,
-				CA88A3D8219FA0B000B17D15 /* Endo.swift */,
-				CACE913B21A078AB00E3F50F /* Folds.swift */,
-				CA88A3E2219FA18D00B17D15 /* Monoid.swift */,
-				CA88A3D4219FA09600B17D15 /* Numeric.swift */,
-				CA88A3DC219FA0CF00B17D15 /* Optional.swift */,
-				CA88A3E0219FA0F200B17D15 /* Pointwise.swift */,
-				CA88A3D2219FA05A00B17D15 /* RangeReplaceableCollection.swift */,
-				OBJ_9 /* Semigroup.swift */,
-				CA88A3DE219FA0DD00B17D15 /* Tuple.swift */,
-				CA393F3621A76B6400C35F44 /* Variance.swift */,
+				CABD067921C2B339008082FB /* Instances */,
+				CABD067821C2B327008082FB /* Algebras */,
 			);
 			name = Monoid;
 			path = Sources/Monoid;
@@ -171,10 +196,10 @@
 /* Begin PBXNativeTarget section */
 		"Monoid::Monoid" /* Monoid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "Monoid" */;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXNativeTarget "Monoid" */;
 			buildPhases = (
-				OBJ_21 /* Sources */,
-				OBJ_23 /* Frameworks */,
+				OBJ_34 /* Sources */,
+				OBJ_49 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,15 +212,15 @@
 		};
 		"Monoid::MonoidTests" /* MonoidTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "MonoidTests" */;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXNativeTarget "MonoidTests" */;
 			buildPhases = (
-				OBJ_39 /* Sources */,
-				OBJ_42 /* Frameworks */,
+				OBJ_65 /* Sources */,
+				OBJ_68 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_44 /* PBXTargetDependency */,
+				OBJ_70 /* PBXTargetDependency */,
 			);
 			name = MonoidTests;
 			productName = MonoidTests;
@@ -204,9 +229,9 @@
 		};
 		"Monoid::SwiftPMPackageDescription" /* MonoidPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "MonoidPackageDescription" */;
+			buildConfigurationList = OBJ_51 /* Build configuration list for PBXNativeTarget "MonoidPackageDescription" */;
 			buildPhases = (
-				OBJ_28 /* Sources */,
+				OBJ_54 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -232,7 +257,7 @@
 				en,
 			);
 			mainGroup = OBJ_5;
-			productRefGroup = OBJ_14 /* Products */;
+			productRefGroup = OBJ_27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -245,126 +270,63 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_21 /* Sources */ = {
+		OBJ_34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				CA88A3D3219FA05A00B17D15 /* RangeReplaceableCollection.swift in Sources */,
-				CA88A3D7219FA0A400B17D15 /* Bool.swift in Sources */,
-				CA88A3D5219FA09600B17D15 /* Numeric.swift in Sources */,
-				CA88A3DD219FA0CF00B17D15 /* Optional.swift in Sources */,
-				CA88A3DB219FA0C200B17D15 /* Comparable.swift in Sources */,
-				CA88A3E7219FA45700B17D15 /* Dictionary.swift in Sources */,
-				CA88A3DF219FA0DD00B17D15 /* Tuple.swift in Sources */,
-				OBJ_22 /* Semigroup.swift in Sources */,
-				CA88A3D9219FA0B000B17D15 /* Endo.swift in Sources */,
-				CACE913C21A078AB00E3F50F /* Folds.swift in Sources */,
-				CA88A3E1219FA0F200B17D15 /* Pointwise.swift in Sources */,
-				CA88A3E3219FA18D00B17D15 /* Monoid.swift in Sources */,
-				CA393F3721A76B6400C35F44 /* Variance.swift in Sources */,
-				CA88A3E5219FA20000B17D15 /* Average.swift in Sources */,
+				OBJ_35 /* Average.swift in Sources */,
+				OBJ_36 /* Bool.swift in Sources */,
+				OBJ_37 /* Comparable.swift in Sources */,
+				OBJ_38 /* Dictionary.swift in Sources */,
+				OBJ_39 /* Endo.swift in Sources */,
+				OBJ_40 /* Folds.swift in Sources */,
+				OBJ_41 /* Monoid.swift in Sources */,
+				CABD081521C30A0F008082FB /* Void.swift in Sources */,
+				CABD081721C30CD6008082FB /* Set.swift in Sources */,
+				OBJ_42 /* Numeric.swift in Sources */,
+				OBJ_43 /* Optional.swift in Sources */,
+				OBJ_44 /* Pointwise.swift in Sources */,
+				OBJ_45 /* RangeReplaceableCollection.swift in Sources */,
+				OBJ_46 /* Semigroup.swift in Sources */,
+				OBJ_47 /* Tuple.swift in Sources */,
+				CABD067C21C2B452008082FB /* TODO.swift in Sources */,
+				OBJ_48 /* Variance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_28 /* Sources */ = {
+		OBJ_54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_29 /* Package.swift in Sources */,
+				OBJ_55 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_39 /* Sources */ = {
+		OBJ_65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_40 /* XCTestManifests.swift in Sources */,
-				OBJ_41 /* MonoidTests.swift in Sources */,
+				OBJ_66 /* MonoidTests.swift in Sources */,
+				OBJ_67 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_34 /* PBXTargetDependency */ = {
+		OBJ_60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Monoid::MonoidTests" /* MonoidTests */;
-			targetProxy = CA88A3D1219FA01D00B17D15 /* PBXContainerItemProxy */;
+			targetProxy = CABD067721C2AE16008082FB /* PBXContainerItemProxy */;
 		};
-		OBJ_44 /* PBXTargetDependency */ = {
+		OBJ_70 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Monoid::Monoid" /* Monoid */;
-			targetProxy = CA88A3D0219FA01C00B17D15 /* PBXContainerItemProxy */;
+			targetProxy = CABD067621C2AE15008082FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Monoid.xcodeproj/Monoid_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Monoid;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Monoid;
-			};
-			name = Debug;
-		};
-		OBJ_20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Monoid.xcodeproj/Monoid_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Monoid;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Monoid;
-			};
-			name = Release;
-		};
-		OBJ_26 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		OBJ_27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,54 +356,48 @@
 		OBJ_32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Monoid.xcodeproj/Monoid_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Monoid;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Monoid;
 			};
 			name = Debug;
 		};
 		OBJ_33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Monoid.xcodeproj/MonoidTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				INFOPLIST_FILE = Monoid.xcodeproj/Monoid_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Monoid;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 4.2;
-				TARGET_NAME = MonoidTests;
-			};
-			name = Debug;
-		};
-		OBJ_38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Monoid.xcodeproj/MonoidTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = MonoidTests;
+				TARGET_NAME = Monoid;
 			};
 			name = Release;
 		};
@@ -465,18 +421,81 @@
 			};
 			name = Release;
 		};
+		OBJ_52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Monoid.xcodeproj/MonoidTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MonoidTests;
+			};
+			name = Debug;
+		};
+		OBJ_64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Monoid.xcodeproj/MonoidTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = MonoidTests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_18 /* Build configuration list for PBXNativeTarget "Monoid" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_19 /* Debug */,
-				OBJ_20 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_2 /* Build configuration list for PBXProject "Monoid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -486,16 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_25 /* Build configuration list for PBXNativeTarget "MonoidPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_26 /* Debug */,
-				OBJ_27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_31 /* Build configuration list for PBXAggregateTarget "MonoidPackageTests" */ = {
+		OBJ_31 /* Build configuration list for PBXNativeTarget "Monoid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_32 /* Debug */,
@@ -504,11 +514,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_36 /* Build configuration list for PBXNativeTarget "MonoidTests" */ = {
+		OBJ_51 /* Build configuration list for PBXNativeTarget "MonoidPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_37 /* Debug */,
-				OBJ_38 /* Release */,
+				OBJ_52 /* Debug */,
+				OBJ_53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_57 /* Build configuration list for PBXAggregateTarget "MonoidPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_62 /* Build configuration list for PBXNativeTarget "MonoidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

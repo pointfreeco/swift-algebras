@@ -1,7 +1,7 @@
 extension Semigroup where A: RangeReplaceableCollection {
-  // TODO: what to name this?
+  // TODO: what to name this? `concat`? `append`?
   public static var array: Semigroup<A> {
-    return Semigroup<A> { $0.append(contentsOf: $1) }
+    return Semigroup<A>(mcombine: { $0.append(contentsOf: $1) })
   }
 }
 
