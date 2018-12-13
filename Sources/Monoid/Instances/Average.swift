@@ -24,6 +24,3 @@ extension Semigroup where A: BinaryFloatingPoint {
     return tuple2(.sum, .sum).imap(Average.init, { ($0.count, $0.sum )})
   }
 }
-
-
-

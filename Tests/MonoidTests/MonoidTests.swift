@@ -154,6 +154,10 @@ final class MonoidTests: XCTestCase {
 
   func testOptional() {
     XCTAssertEqual(4, Semigroup.optional(.max).fold([1, 2, nil, 3, 4]))
+    XCTAssertEqual(10, Semigroup.optional(.sum).fold([1, 2, nil, 3, 4]))
+    
+    XCTAssertEqual(4, [1, 2, nil, 3, 4].fold(Semigroup.optional(.max)))
+    XCTAssertEqual(10, [1, 2, nil, 3, 4].fold(Semigroup.optional(.sum)))
   }
 
   static var allTests = [
