@@ -57,18 +57,25 @@ final class MonoidTests: XCTestCase {
     XCTAssertEqual(Float.greatestFiniteMagnitude, Monoid.min.fold([]))
   }
 
+  func testJoin() {
+    XCTAssertEqual(
+      "one-two-three",
+      ["one", "two", "three"].fold(.joined(separator: "-"))
+    )
+  }
+
   func testMerge() {
     XCTAssertEqual(
       [1: "oneuno", 2: "twodos"],
-      Semigroup.merge(with: .concat).combine([1: "one", 2: "two"], [1: "uno", 2: "dos"])
+      Semigroup.merge(with: .joined).combine([1: "one", 2: "two"], [1: "uno", 2: "dos"])
     )
 
     XCTAssertEqual(
       [1: "oneuno", 2: "twodos"],
-      Monoid.merge(with: .concat).fold([[1: "one", 2: "two"], [1: "uno", 2: "dos"]])
+      Monoid.merge(with: .joined).fold([[1: "one", 2: "two"], [1: "uno", 2: "dos"]])
     )
 
-    XCTAssertEqual([Int: String](), Monoid.merge(with: .concat).fold([]))
+    XCTAssertEqual([Int: String](), Monoid.merge(with: .joined).fold([]))
   }
 
   func testEnd() {
@@ -120,11 +127,11 @@ final class MonoidTests: XCTestCase {
   }
 
   func testPointwise() {
-    let f: (Int) -> [String] = Semigroup.pointwise(into: .concat)
+    let f: (Int) -> [String] = Semigroup.pointwise(into: .joined)
       .combine({ ["\($0)", "\($0)"] }, { ["\($0)", "\($0)", "\($0)"] })
-    let g: (Int) -> [String] = Monoid.pointwise(into: .concat)
+    let g: (Int) -> [String] = Monoid.pointwise(into: .joined)
       .fold([{ ["\($0)", "\($0)"] }, { ["\($0)", "\($0)", "\($0)"] }])
-    let h: (Int) -> [String] = Monoid.pointwise(into: .concat).fold([])
+    let h: (Int) -> [String] = Monoid.pointwise(into: .joined).fold([])
 
     XCTAssertEqual(["1", "1", "1", "1", "1"], f(1))
     XCTAssertEqual(["1", "1", "1", "1", "1"], g(1))
@@ -133,9 +140,9 @@ final class MonoidTests: XCTestCase {
 
   func testTuple() {
     // TODO: `Semigroup.` is needed here because of the convenience `combine` on Monoid. is it worth it?
-    XCTAssertEqual((3, "HelloWorld"), tuple2(Semigroup.sum, .concat).combine((1, "Hello"), (2, "World")))
+    XCTAssertEqual((3, "HelloWorld"), tuple2(Semigroup.sum, .joined).combine((1, "Hello"), (2, "World")))
     
-    XCTAssertEqual((3, "HelloWorld"), tuple2(.sum, .concat).fold([(1, "Hello"), (2, "World")]))
+    XCTAssertEqual((3, "HelloWorld"), tuple2(.sum, .joined).fold([(1, "Hello"), (2, "World")]))
   }
 
   func testAverage() {
