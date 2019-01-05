@@ -60,15 +60,15 @@ final class MonoidTests: XCTestCase {
   func testMerge() {
     XCTAssertEqual(
       [1: "oneuno", 2: "twodos"],
-      Semigroup.merge(with: .array).combine([1: "one", 2: "two"], [1: "uno", 2: "dos"])
+      Semigroup.merge(with: .concat).combine([1: "one", 2: "two"], [1: "uno", 2: "dos"])
     )
 
     XCTAssertEqual(
       [1: "oneuno", 2: "twodos"],
-      Monoid.merge(with: .array).fold([[1: "one", 2: "two"], [1: "uno", 2: "dos"]])
+      Monoid.merge(with: .concat).fold([[1: "one", 2: "two"], [1: "uno", 2: "dos"]])
     )
 
-    XCTAssertEqual([Int: String](), Monoid.merge(with: .array).fold([]))
+    XCTAssertEqual([Int: String](), Monoid.merge(with: .concat).fold([]))
   }
 
   func testEnd() {
@@ -120,11 +120,11 @@ final class MonoidTests: XCTestCase {
   }
 
   func testPointwise() {
-    let f: (Int) -> [String] = Semigroup.pointwise(into: .array)
+    let f: (Int) -> [String] = Semigroup.pointwise(into: .concat)
       .combine({ ["\($0)", "\($0)"] }, { ["\($0)", "\($0)", "\($0)"] })
-    let g: (Int) -> [String] = Monoid.pointwise(into: .array)
+    let g: (Int) -> [String] = Monoid.pointwise(into: .concat)
       .fold([{ ["\($0)", "\($0)"] }, { ["\($0)", "\($0)", "\($0)"] }])
-    let h: (Int) -> [String] = Monoid.pointwise(into: .array).fold([])
+    let h: (Int) -> [String] = Monoid.pointwise(into: .concat).fold([])
 
     XCTAssertEqual(["1", "1", "1", "1", "1"], f(1))
     XCTAssertEqual(["1", "1", "1", "1", "1"], g(1))
@@ -133,9 +133,9 @@ final class MonoidTests: XCTestCase {
 
   func testTuple() {
     // TODO: `Semigroup.` is needed here because of the convenience `combine` on Monoid. is it worth it?
-    XCTAssertEqual((3, "HelloWorld"), tuple2(Semigroup.sum, .array).combine((1, "Hello"), (2, "World")))
+    XCTAssertEqual((3, "HelloWorld"), tuple2(Semigroup.sum, .concat).combine((1, "Hello"), (2, "World")))
     
-    XCTAssertEqual((3, "HelloWorld"), tuple2(.sum, .array).fold([(1, "Hello"), (2, "World")]))
+    XCTAssertEqual((3, "HelloWorld"), tuple2(.sum, .concat).fold([(1, "Hello"), (2, "World")]))
   }
 
   func testAverage() {
