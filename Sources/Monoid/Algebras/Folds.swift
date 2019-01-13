@@ -1,7 +1,33 @@
+import Dispatch
+
 extension Semigroup {
-  public func fold<S: Sequence>(_ initialValue: S.Element, _ xs: S) -> A where S.Element == A {
+  public func fold<S: Sequence>(_ initialValue: S.Element, _ xs: S) -> S.Element where S.Element == A {
     return self.foldMap({ $0 })(initialValue, xs)
   }
+
+  public func parallelFold<S: Sequence>(_ initialValue: S.Element, _ xs: S) -> A where S.Element == A {
+
+    let coreCount = sysconf(CInt(_SC_NPROCESSORS_ONLN))
+    let chunkSize = xs.underestimatedCount / coreCount
+
+    var result = initialValue
+    var results: [A?] = [A?](repeating: nil, count: coreCount)
+
+    DispatchQueue.concurrentPerform(iterations: coreCount) { idx in
+      xs.suffix(idx * coreCount).prefix(chunkSize)
+    }
+
+    (1...1_000_000_000).underestimatedCount
+
+    for intermediateResult in results {
+      self.mcombine(&result, intermediateResult!)
+    }
+
+    return result
+//    return self.foldMap({ $0 })(initialValue, xs)
+  }
+
+  // todo: make an inout
 
   // TODO: it should be possible to get rid of `where S.Element == A`
   public func foldMap<S: Sequence>(_ f: @escaping (S.Element) -> A) -> (S.Element, S) -> A where S.Element == A {
@@ -14,8 +40,31 @@ extension Semigroup {
 }
 
 extension Monoid {
+  // todo: make inout
   public func fold<S: Sequence>(_ xs: S) -> A where S.Element == A {
     return self.foldMap({ $0 })(xs)
+  }
+
+  public func parallelFold<S: RandomAccessCollection>(_ xs: S) -> S.Element where S.Element == A {
+    let coreCount = sysconf(CInt(_SC_NPROCESSORS_ONLN))
+    let chunkSize = xs.underestimatedCount / coreCount
+
+    var result = self.empty
+    var results: [A?] = [A?](repeating: nil, count: coreCount)
+
+    DispatchQueue.concurrentPerform(iterations: coreCount) { idx in
+      results[idx] = xs
+        .suffix(from: xs.index(xs.startIndex, offsetBy: idx * chunkSize))
+        .prefix(chunkSize)
+        .reduce(into: self.empty, self.mcombine)
+//        .fold(self)
+    }
+
+    for intermediateResult in results {
+      self.mcombine(&result, intermediateResult!)
+    }
+
+    return result
   }
 
   public func foldMap<S: Sequence>(_ f: @escaping (S.Element) -> A) -> (S) -> A {
